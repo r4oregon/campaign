@@ -1,0 +1,107 @@
+html { font-size: 100%; }
+* { box-sizing: border-box; }
+body {
+    line-height: 130%;
+    background-color: #000000;
+     background: linear-gradient(0deg, rgba(130,120,20,1) 0%, rgba(110,10,0,1) 6%, rgba(20,3,60,1) 12%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 100%);
+    margin: 2rem 7rem 1.5rem 7rem;
+    color: #bbbbbb;
+    font-family: Arial, Tahoma, Verdana, Geneva, Helvetica, Swiss, sans-serif;
+}
+
+/*   My Android Note 4 is 360 x 560 vertical or 640 x 280 horizontal  */
+/*   https://viewportsizes.com/mine/     https://dev.to/macargnelutti/using-css-viewport-units-for-font-sizes-can-be-tricky-3h31   */
+@media only screen and (max-width: 820px) {
+  /* For mobile phones: */
+  html { font-size: 3vw; }
+  body { margin: 1rem 2rem 1.5rem 2rem; }
+}
+@media only screen and (max-width: 599px) {
+  /* For mobile phones: */
+  html { font-size: 4vw; }
+  body { margin: 1rem 2rem 1.5rem 2rem; }
+}
+
+img.floatright {float: right; margin: 0em 0em 1em 2em; width: 20%; z-index: 1; }
+img.floatright:hover {
+    transform: scale(1.1);
+    float: right; margin: 2em 2em 2em 2em;
+    width: 80%;
+    filter: none;
+    z-index: 3;
+}
+
+
+
+a:link { color: #7777ff; text-decoration: underline; background-color: rgba(0,0,0,0.5) }
+a:active { color: #ffff00; text-decoration: none; background-color: #0000ff }
+a:visited { color: #5555d4; text-decoration: underline; background-color: rgba(0,0,0,0.5) }
+a:hover { color: #dd0000; text-decoration: underline overline; background-color: #ffff00 }
+
+a[href^=tel]:before { content: '\260e \2009'; }     /*  escaped Unicode black phone, escaped Unicode thin-space  */
+a[href^=mailto]:before { content: '\2709 \2009'; }  /*  escaped Unicode envelope, escaped Unicode thin-space  */
+
+h1 { page-break-after: avoid; line-height: 130%; color: #ff0000; }
+h2 { page-break-after: avoid; line-height: 130%; color: #ffffff; }
+h3 { page-break-after: avoid; line-height: 130%; }
+h4 { page-break-after: avoid; line-height: 130%; }
+
+p { orphans: 2; }
+
+.pHead{ font-weight: bold; color: #ffffff }
+
+/*  background gradient created at https://cssgradient.io/   */
+p.auxLinkBar{ text-align: center; font-size: smaller; background: rgba(200,200,0,0.1); background: linear-gradient(90deg, rgba(255,255,0,0.8) 0%, rgba(180,180,0,0.4) 15%, rgba(130,150,0,0.1) 50%, rgba(180,180,0,0.4) 85%, rgba(255,255,0,0.8) 100%); color: rgba(255,100,100,1); padding-top: 0.3rem; padding-bottom: 0.3rem; padding-left: 3rem; padding-right: 3rem; margin-top: 0rem; margin-bottom: 1rem; }
+p.auxLinkBar a:link { color: rgba(70,70,255,1); text-decoration: underline; background-color: rgba(0,0,0,0.5); }
+p.auxLinkBar a:active { color: rgba(0,0,0,1); text-decoration: none; background-color: rgba(255,255,255,1); }
+p.auxLinkBar a:visited { color: rgba(70,70,255,1); text-decoration: underline; background-color: rgba(0,0,0,0.5); }
+p.auxLinkBar a:hover { color: rgba(0,0,0,0.8); text-decoration: underline overline; background-color: rgba(255,255,255,0.8); }
+p.auxLinkBar .current { color: rgba(255,80,80,0.9); }
+
+.red_bold { color: #ff0000; font-weight: bold; }
+.note { color: #00bb00; font-family: times, serif; font-style: italic; }
+
+
+.yellow_highlight { background-color: rgba(255,255,0,0.4);  color: #eeeeee; }
+
+.command { font-family: Consolas, 'Liberation Mono', Terminus, 'Lucida Console', Terminal, Gamow, monospace, 'Courier New', Courier, mono; color: #ffffff; background-color: rgba(170,255,170,0.3); font-weight: bold; }
+
+.see_also_wb { font-size: smaller; color: #00aa00;  font-style: italic; font-family: times, serif; }
+
+.see_also_wb a:link { color: #66ff00; font-weight: bold; font-style: italic; text-decoration: underline }
+.see_also_wb a:active { color: #00cc00; font-weight: bold; font-style: italic; text-decoration: underline overline; background-color: #ffff66 }
+.see_also_wb a:visited { color: #66ff00; font-weight: bold; font-style: italic; text-decoration: underline }
+.see_also_wb a:hover { color: #000000; font-weight: bold; font-style: italic; text-decoration: none; background-color: #33ff33 }
+
+.date_line { color: #9a9a9a; font-family: "times new roman", roman, times, serif; text-align: left; font-style: italic; font-size: smaller; }
+
+.red_field { color: #ee0000; font-family: consolas, "Liberation Mono", OCR, "OCR A Extended", "Lucida Sans Typewriter", "Courier New", Courier, mono; font-weight: bold; }
+
+div.body_box { margin: auto; padding: 0.5rem 2rem 1rem 2rem;
+ border: thin double #998787;
+/* Gradient generated from http://www.colorzilla.com/gradient-editor/#ffffe5+0,eddf89+100;Custom */
+background: #777734; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #ffffe5 0%, #eddf89 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffe5), color-stop(100%,#eddf89)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #ffffe5 0%,#eddf89 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #ffffe5 0%,#eddf89 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #ffffe5 0%,#eddf89 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, #271505 0%, #483010 100%); /* W3C */
+}
+div.body_box a:link { background-color: rgba(0,0,0,0.0) }
+div.body_box a:active { background-color: #0000ff }
+div.body_box a:visited { background-color: rgba(0,0,0,0.0) }
+div.body_box a:hover { background-color: #ffff00 }
+/*
+div.body_box a:link { color: #7777ff; text-decoration: underline; background-color: rgba(0,0,0,0.0) }
+div.body_box a:active { color: #ffff00; text-decoration: none; background-color: #0000ff }
+div.body_box a:visited { color: #5555d4; text-decoration: underline; background-color: rgba(0,0,0,0.0) }
+div.body_box a:hover { color: #dd0000; text-decoration: underline overline; background-color: #ffff00 }
+*/
+
+.no_print { }
+
+@media print {
+    .no_print {display:none;}
+    p.auxLinkBar {display:none;}
+}

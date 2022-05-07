@@ -5,8 +5,17 @@ body {
     background-color: #000000;
      background: linear-gradient(0deg, rgba(130,120,20,1) 0%, rgba(110,10,0,1) 6%, rgba(20,3,60,1) 12%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 100%);
     margin: 2rem 7rem 1.5rem 7rem;
+    max-width: 65rem;
     color: #bbbbbb;
     font-family: Arial, Tahoma, Verdana, Geneva, Helvetica, Swiss, sans-serif;
+}
+img.floatright {float: right; margin: 0em 0em 1em 2em; width: 30%; z-index: 1; }
+img.floatright:hover {
+    transform: scale(1.1);
+    float: right; margin: 2em 2em 2em 2em; padding-left: 1em;
+    width: 70%;
+    filter: none;
+    z-index: 3;
 }
 
 /*   My Android Note 4 is 360 x 560 vertical or 640 x 280 horizontal  */
@@ -15,21 +24,17 @@ body {
   /* For mobile phones: */
   html { font-size: 3vw; }
   body { margin: 1rem 2rem 1.5rem 2rem; }
+  img.floatright { width: 40%; }
+  img.floatright:hover { width: 100%; float: none; margin: 1em 0em 1em 0em; padding-left: 0em; z-index: 1; }
 }
 @media only screen and (max-width: 599px) {
   /* For mobile phones: */
   html { font-size: 4vw; }
   body { margin: 1rem 2rem 1.5rem 2rem; }
+  img.floatright { width: 100%; margin: 0em 0em 0em 0em; float: none; z-index: 1; filter: none; }
+  img.floatright:hover { width: 100%; margin: 0em 0em 0em 0em; padding-left: 0em; float: none; z-index: 1; filter: none; }
 }
 
-img.floatright {float: right; margin: 0em 0em 1em 2em; width: 20%; z-index: 1; }
-img.floatright:hover {
-    transform: scale(1.1);
-    float: right; margin: 2em 2em 2em 2em;
-    width: 80%;
-    filter: none;
-    z-index: 3;
-}
 
 
 

@@ -88,6 +88,20 @@ p.auxLinkBar .current { color: rgba(255,80,80,0.9); }
 .NotHere a:visited { color: rgba(0,0,0,0); text-decoration: none; background-color: rgba(0,0,0,0); }
 .NotHere a:hover   { color: rgba(0,0,0,0); text-decoration: none; background-color: rgba(0,0,0,0); }
 
+.button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #7aa8b7;
+        border-radius: 6px;
+        outline: none;
+        font-size: large;
+      }
+
+.bigButton { font-weight: bold; font-size: 1.4em; color: #dd0000; }
+
 div.body_box { margin: auto; padding: 0.5rem 2rem 1rem 2rem;
  border: thin double #998787;
 /* Gradient generated from http://www.colorzilla.com/gradient-editor/#ffffe5+0,eddf89+100;Custom */

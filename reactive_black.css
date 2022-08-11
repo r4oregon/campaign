@@ -82,6 +82,12 @@ p.auxLinkBar .current { color: rgba(255,80,80,0.9); }
 
 .red_field { color: #ee0000; font-family: consolas, "Liberation Mono", OCR, "OCR A Extended", "Lucida Sans Typewriter", "Courier New", Courier, mono; font-weight: bold; }
 
+.NotHere { color: rgba(0,0,0,0); font-size: small; }
+.NotHere a:link    { color: rgba(0,0,0,0); text-decoration: none; background-color: rgba(0,0,0,0); }
+.NotHere a:active  { color: rgba(0,0,0,0); text-decoration: none; background-color: rgba(0,0,0,0); }
+.NotHere a:visited { color: rgba(0,0,0,0); text-decoration: none; background-color: rgba(0,0,0,0); }
+.NotHere a:hover   { color: rgba(0,0,0,0); text-decoration: none; background-color: rgba(0,0,0,0); }
+
 div.body_box { margin: auto; padding: 0.5rem 2rem 1rem 2rem;
  border: thin double #998787;
 /* Gradient generated from http://www.colorzilla.com/gradient-editor/#ffffe5+0,eddf89+100;Custom */
@@ -108,5 +114,6 @@ div.body_box a:hover { color: #dd0000; text-decoration: underline overline; back
 
 @media print {
     .no_print {display:none;}
+    .NotHere {display:none;}
     p.auxLinkBar {display:none;}
 }

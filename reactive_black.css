@@ -54,6 +54,7 @@ h4 { page-break-after: avoid; line-height: 130%; }
 p { orphans: 2; }
 
 .pHead{ font-weight: bold; color: #ffffff }
+.pHeadY{ font-weight: bold; color: #ffff00 }
 
 /*  background gradient created at https://cssgradient.io/   */
 p.auxLinkBar{ text-align: center; font-size: smaller; background: rgba(200,200,0,0.1); background: linear-gradient(90deg, rgba(255,255,0,0.8) 0%, rgba(180,180,0,0.4) 15%, rgba(130,150,0,0.1) 50%, rgba(180,180,0,0.4) 85%, rgba(255,255,0,0.8) 100%); color: rgba(255,100,100,1); padding-top: 0.3rem; padding-bottom: 0.3rem; padding-left: 3rem; padding-right: 3rem; margin-top: 0rem; margin-bottom: 1rem; }

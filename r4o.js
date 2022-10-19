@@ -33,5 +33,6 @@ if(this_page == "index_uk.html"){
     var uk_button = "<a href=\"index_uk.html\" lang=\"uk\" title=\"українська мова\" target=\"_self\"><img class=\"langButton\" src=\"button_uk.png\" alt=\"українська мова\" \/><\/a>";
 }
 
-return("<p class=\"stealth_link\">" + en_button + " " + es_button + " " + ru_button + " " + uk_button + "<\/p><p> &nbsp; <\/p>");
+return("<p class=\"stealth_link\">" + en_button + " " + es_button + "<\/p><p> &nbsp; <\/p>");
+// return("<p class=\"stealth_link\">" + en_button + " " + es_button + " " + ru_button + " " + uk_button + "<\/p><p> &nbsp; <\/p>");
 };
